@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="/static/styles/login_style.css">
+</head>
+<body>
+    <div class="container right-panel-active">
+	<!-- Sign Up -->
+	<div class="container__form container--signup">
+		<form action="signup" method="post" class="form" id="form1">
+			<h2 class="form__title">Регистрация</h2>
+			<input type="text" name="login" placeholder="Логин" class="input" />
+			<input type="email" name="email" placeholder="Email" class="input" />
+			<input type="password" name="password" placeholder="Пароль" class="input" />
+			<button class="btn">Зарегистрироваться</button>
+		</form>
+	</div>
+
+	<!-- Sign In -->
+	<div class="container__form container--signin">
+		<form action="signin" method="post" class="form" id="form2">
+			<h2 class="form__title">Войти</h2>
+			<input type="email" name="email" placeholder="Email" class="input" />
+			<input type="password" name="password" placeholder="Пароль" class="input" />
+			<a href="#" class="link">Забыли пароль?</a>
+			<button class="btn">Войти</button>
+		</form>
+	</div>
+
+	<!-- Overlay -->
+	<div class="container__overlay">
+		<div class="overlay">
+			<div class="overlay__panel overlay--left">
+				<button class="btn" id="signIn">Войти</button>
+			</div>
+			<div class="overlay__panel overlay--right">
+				<button class="btn" id="signUp">Зарегистрироваться</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/static/scripts/login_script.js"></script>
+</body>
+</html>

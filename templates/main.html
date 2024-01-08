@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="/static/styles/styles.css">
+        <link rel="stylesheet" href="/static/styles/dashboard.css">
+    <title>{% block title %}Киберфарма {% endblock title %}</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.png">
+        </div>
+        <nav class="four">
+        <ul class="topmenu">
+                        <li><a href="#">Статистика<i class="fa fa-angle-down"></i></a></li>
+            <li><a href="#">Справочники<i class="fa fa-angle-down"></i></a>
+                 <ul class="submenu">
+                    <li><a href="">Товары</a></li>
+                    <li><a href="">Компания</a></li>
+                    <li><a href="">Юр лицо</a></li>
+                    <li><a href="">Пользователи</a></li>
+                    <li><a href="">Контрагенты</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Документы<i class="fa fa-angle-down"></i></a>
+                 <ul class="submenu">
+                    <li><a href="">Поставки</a></li>
+                    <li><a href="">Переброски</a></li>
+                    <li><a href="">Коррекции</a></li>
+                    <li><a href="">Дифицит</a></li>
+                    <li><a href="">Прайс-листы</a></li>
+                    <li><a href="">Заказы контрагентам</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Отчеты<i class="fa fa-angle-down"></i></a>
+                 <ul class="submenu">
+                    <li><a href="">Продажи</a></li>
+                    <li><a href="">Закупки</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+        <nav class="four">
+        <ul class="topmenu">
+            <li><a href="#">{{ user_name }}<i class="fa fa-angle-down"></i></a>
+                 <ul class="submenu">
+                    <li><a href="">Профиль</a></li>
+                    <li><a href="">Настройки</a></li>
+                    <li><a href="/">Выход</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+    </header>
+        <div class="content">
+            {% block content %}
+
+            {% endblock content %}
+        </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
